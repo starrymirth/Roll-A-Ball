@@ -1,3 +1,4 @@
-Temp/*
+Temp
 *.suo
-Builds/*
+Builds
+Library
