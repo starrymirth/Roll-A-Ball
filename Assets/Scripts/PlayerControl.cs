@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
@@ -10,7 +9,7 @@ public class PlayerControl : MonoBehaviour
     public Text countText;
     public Text winText;
 
-    void Start ()
+    void Start()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
