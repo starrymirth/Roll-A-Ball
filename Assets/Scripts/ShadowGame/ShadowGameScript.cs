@@ -36,7 +36,6 @@ public class ShadowGameScript : MonoBehaviour
         }
     }
 
-
     public void IncrementCount()
     {
         count += 1;
