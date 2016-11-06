@@ -8,9 +8,11 @@ public class PlayerControl : MonoBehaviour
     private int count;
     public Text countText;
     public Text winText;
+    private AudioSource source;
 
     void Start()
     {
+        source = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         count = 0;
         setCountText();
@@ -31,6 +33,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
+            source.Play();
             other.gameObject.SetActive(false);
             count += 1;
             setCountText();
