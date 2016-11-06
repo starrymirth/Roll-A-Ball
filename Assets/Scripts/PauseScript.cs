@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class MiniGameScript : MonoBehaviour
+public class PauseScript : MonoBehaviour
 {
     private bool isPaused;
     public GameObject PauseMenuCanvas;
@@ -54,12 +53,13 @@ public class MiniGameScript : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(0);
         ResumeGame();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    
+
     public void GoToMenu()
     {
-        SceneManager.LoadScene(1);
+        ResumeGame();
+        SceneManager.LoadScene(0);
     }
 }

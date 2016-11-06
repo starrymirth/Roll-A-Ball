@@ -65,7 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\MenuSceneScript.cs" />
-    <Compile Include="Assets\Scripts\MiniGameScript.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
   </ItemGroup>
